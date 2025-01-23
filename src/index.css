@@ -88,11 +88,17 @@ button {
   border: none;
   background-color: white;
   font-family: Karla, sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   font-weight: bold;
   cursor: pointer;
   align-items: center;
   justify-content: center;
+}
+
+.die{
+  align-items: center;
+  justify-content: center;
+
 }
 
 .roll-dice-button {
