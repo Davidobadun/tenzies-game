@@ -91,6 +91,8 @@ button {
   font-size: 1.75rem;
   font-weight: bold;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
 
 .roll-dice-button {
