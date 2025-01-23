@@ -1,91 +1,151 @@
-html, body {
-  margin: 0;
+* {
+  box-sizing: border-box;
 }
 
 body {
-  font-family: Inter;
+  font-family: Karla, sans-serif;
+  margin: 0;
+  background-color: #0B2434;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.container {
-  margin: 45px 40px;
+
+
+div#root {
+  height: 100%;
+  width: 100%;
+  max-height: 500px;
+  max-width: 500px;
 }
 
-header {
-  background: #F55A5A;
+.tenzies-container {
+  background-color: #F5F5F5;
+  height: 100%;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.title {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  height: 55px;
+  gap:5px;
+  font-size: 40px;
+  margin: 0;
+  padding-top: 0px;
+  margin-top: 0px;
+
 }
 
-header > img {
-  width: 24px;
-  margin-right: 7px;
+.die-image{
+  width: 160px; 
+  height: 80px;
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
-header > .header-span-content {
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-article.journal-entry {
-  display: flex;
-  margin-bottom: 36px;
-  margin-top: 36px;
-  margin-right: 20px;
-}
-
-article.journal-entry .marker {
-  width: 7px;
-  margin-right: 4px;
-}
-
-article.journal-entry .main-image-container {
-  width: 125px;
-  height: 168px;
-  overflow: hidden;
-  border-radius: 5px;
-  flex-shrink: 0;
-  margin-right: 19px;
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
   margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0;
 }
 
-article.journal-entry .main-image {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+.die-container {
+  justify-content: center;
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 10px;
 }
 
-.info-container span.country {
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  margin-right: 12px;
+button {
+  font-family: Karla, sans-serif;
+  cursor: pointer;
 }
 
-.info-container a {
-  color: #2B283A;
-  font-size: 0.7rem;
-}
-
-.info-container a:visited {
-  color: #918E9B;
-}
-
-.info-container h2.entry-title {
-  margin-top: 7px;
-  margin-bottom: 17px;
-}
-
-.info-container p.trip-dates {
+.die-container button {
+  height: 50px;
+  width: 50px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  font-family: Karla, sans-serif;
+  font-size: 1.75rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
-.info-container p.entry-text {
-  line-height: 1.5;
-  font-size: 0.8rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;  
+.roll-dice-button {
+  height: 50px;
+  white-space: nowrap;
+  width: auto;
+  padding: 6px 21px;
+  border: none;
+  border-radius: 6px;
+  background-color: #5035FF;
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
   overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.rollCount-container{
+  color: #1c1d1e;
+  font-size: 1.12rem;
+  line-height: 30px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  background: #F5F5F5;
+  white-space: nowrap;
+  width: auto;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #5a42fa;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.timer-icon{
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+  padding-right: 15px;
+  size: 20px;
+
+}
+
+.rollCount{
+  padding-left: 50px;
+  padding-right: 10px;
 }
